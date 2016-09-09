@@ -12,6 +12,16 @@
 		7D008A361D80C5AB00101266 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D008A341D80C5AB00101266 /* Main.storyboard */; };
 		7D008A381D80C5AB00101266 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D008A371D80C5AB00101266 /* Assets.xcassets */; };
 		7D008A3B1D80C5AB00101266 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D008A391D80C5AB00101266 /* LaunchScreen.storyboard */; };
+		7D008A431D80C65500101266 /* tableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D008A421D80C65500101266 /* tableViewController.swift */; };
+		7D7312CE1D8247D1004307B5 /* horse1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D7312CD1D8247D1004307B5 /* horse1.jpg */; };
+		7D7312D21D824851004307B5 /* butterfly1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D7312D11D824851004307B5 /* butterfly1.jpg */; };
+		7D7312D41D8248A6004307B5 /* tiger1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D7312D31D8248A6004307B5 /* tiger1.jpg */; };
+		7D7312D61D8248AD004307B5 /* cat1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D7312D51D8248AD004307B5 /* cat1.jpg */; };
+		7D7312D81D8248B7004307B5 /* dog1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D7312D71D8248B7004307B5 /* dog1.jpg */; };
+		7D7312DA1D8248D4004307B5 /* duck1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D7312D91D8248D4004307B5 /* duck1.jpg */; };
+		7D7312DC1D8263BF004307B5 /* cat_icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D7312DB1D8263BF004307B5 /* cat_icon.jpg */; };
+		7D7312DE1D8264B0004307B5 /* icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D7312DD1D8264B0004307B5 /* icon.jpg */; };
+		7D7312E01D826597004307B5 /* bird_icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D7312DF1D826597004307B5 /* bird_icon.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +32,16 @@
 		7D008A371D80C5AB00101266 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D008A3A1D80C5AB00101266 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7D008A3C1D80C5AB00101266 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D008A421D80C65500101266 /* tableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tableViewController.swift; sourceTree = "<group>"; };
+		7D7312CD1D8247D1004307B5 /* horse1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = horse1.jpg; sourceTree = "<group>"; };
+		7D7312D11D824851004307B5 /* butterfly1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = butterfly1.jpg; sourceTree = "<group>"; };
+		7D7312D31D8248A6004307B5 /* tiger1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tiger1.jpg; sourceTree = "<group>"; };
+		7D7312D51D8248AD004307B5 /* cat1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cat1.jpg; sourceTree = "<group>"; };
+		7D7312D71D8248B7004307B5 /* dog1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dog1.jpg; sourceTree = "<group>"; };
+		7D7312D91D8248D4004307B5 /* duck1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = duck1.jpg; sourceTree = "<group>"; };
+		7D7312DB1D8263BF004307B5 /* cat_icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cat_icon.jpg; sourceTree = "<group>"; };
+		7D7312DD1D8264B0004307B5 /* icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = icon.jpg; sourceTree = "<group>"; };
+		7D7312DF1D826597004307B5 /* bird_icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bird_icon.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +77,16 @@
 				7D008A301D80C5AB00101266 /* AppDelegate.swift */,
 				7D008A321D80C5AB00101266 /* ViewController.swift */,
 				7D008A341D80C5AB00101266 /* Main.storyboard */,
+				7D7312DF1D826597004307B5 /* bird_icon.jpg */,
+				7D7312DD1D8264B0004307B5 /* icon.jpg */,
+				7D7312DB1D8263BF004307B5 /* cat_icon.jpg */,
+				7D7312D71D8248B7004307B5 /* dog1.jpg */,
+				7D7312D91D8248D4004307B5 /* duck1.jpg */,
+				7D7312D51D8248AD004307B5 /* cat1.jpg */,
+				7D7312D31D8248A6004307B5 /* tiger1.jpg */,
+				7D7312D11D824851004307B5 /* butterfly1.jpg */,
+				7D7312CD1D8247D1004307B5 /* horse1.jpg */,
+				7D008A421D80C65500101266 /* tableViewController.swift */,
 				7D008A371D80C5AB00101266 /* Assets.xcassets */,
 				7D008A391D80C5AB00101266 /* LaunchScreen.storyboard */,
 				7D008A3C1D80C5AB00101266 /* Info.plist */,
@@ -122,9 +152,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D7312D61D8248AD004307B5 /* cat1.jpg in Resources */,
+				7D7312D21D824851004307B5 /* butterfly1.jpg in Resources */,
+				7D7312D41D8248A6004307B5 /* tiger1.jpg in Resources */,
+				7D7312DE1D8264B0004307B5 /* icon.jpg in Resources */,
+				7D7312DA1D8248D4004307B5 /* duck1.jpg in Resources */,
+				7D7312D81D8248B7004307B5 /* dog1.jpg in Resources */,
+				7D7312DC1D8263BF004307B5 /* cat_icon.jpg in Resources */,
 				7D008A3B1D80C5AB00101266 /* LaunchScreen.storyboard in Resources */,
 				7D008A381D80C5AB00101266 /* Assets.xcassets in Resources */,
+				7D7312E01D826597004307B5 /* bird_icon.jpg in Resources */,
 				7D008A361D80C5AB00101266 /* Main.storyboard in Resources */,
+				7D7312CE1D8247D1004307B5 /* horse1.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +174,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D008A431D80C65500101266 /* tableViewController.swift in Sources */,
 				7D008A331D80C5AB00101266 /* ViewController.swift in Sources */,
 				7D008A311D80C5AB00101266 /* AppDelegate.swift in Sources */,
 			);
@@ -286,6 +326,7 @@
 				7D008A411D80C5AB00101266 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

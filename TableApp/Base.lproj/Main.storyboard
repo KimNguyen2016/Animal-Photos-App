@@ -1,25 +1,317 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="zGO-X0-w54">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Navigation Controller-->
+        <scene sceneID="zzJ-A1-9WO">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <navigationController id="zGO-X0-w54" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rem-jO-odq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="dPC-9H-i3J" kind="relationship" relationship="rootViewController" id="4cY-Pj-vbl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sqb-a3-pTw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-2475" y="364"/>
+        </scene>
+        <!--PHOTOS OF ANIMALS-->
+        <scene sceneID="6sT-T1-EdQ">
+            <objects>
+                <tableViewController id="dPC-9H-i3J" customClass="TableViewController" customModule="TableApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="63" sectionHeaderHeight="28" sectionFooterHeight="28" id="Tbz-CM-e7j">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="separatorColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="sectionIndexColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="Cell" textLabel="v0V-3c-1VP" detailTextLabel="GJq-Mx-GBI" imageView="5nr-tQ-MGL" rowHeight="63" style="IBUITableViewCellStyleValue1" id="paO-P7-Inr">
+                                <rect key="frame" x="0.0" y="92" width="320" height="63"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="paO-P7-Inr" id="TLJ-g5-Abu">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="62"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="v0V-3c-1VP">
+                                            <rect key="frame" x="92" y="21" width="32" height="20"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GJq-Mx-GBI">
+                                            <rect key="frame" x="263" y="21" width="42" height="20"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="icon.jpg" id="5nr-tQ-MGL">
+                                            <rect key="frame" x="15" y="0.0" width="62" height="62"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="dPC-9H-i3J" id="Nna-n9-j8m"/>
+                            <outlet property="delegate" destination="dPC-9H-i3J" id="aca-c4-dkl"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="PHOTOS OF ANIMALS" id="tdO-TH-UxP">
+                        <barButtonItem key="backBarButtonItem" title="Back To Main Page" id="cmb-MX-aBW"/>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="quJ-hv-bdj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2071" y="359"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Wtd-V2-shL">
+            <objects>
+                <viewController storyboardIdentifier="A" id="Wvv-qX-Wlz" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wfh-YC-ISB"/>
+                        <viewControllerLayoutGuide type="bottom" id="pmo-23-4af"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="v6w-P1-Om5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dog1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="9G1-6a-NAJ">
+                                <rect key="frame" x="16" y="50" width="280" height="468"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="468" id="WWK-ad-8TI"/>
+                                    <constraint firstAttribute="width" constant="280" id="Xzj-Y0-iDy"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9G1-6a-NAJ" firstAttribute="leading" secondItem="v6w-P1-Om5" secondAttribute="leadingMargin" id="E5F-oo-d2v"/>
+                            <constraint firstItem="9G1-6a-NAJ" firstAttribute="centerY" secondItem="v6w-P1-Om5" secondAttribute="centerY" id="an2-xI-9cj"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7n2-h9-OCT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1725" y="359"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ykP-hW-V9S">
+            <objects>
+                <viewController storyboardIdentifier="C" id="GDw-V2-qsj" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7Rb-XK-K73"/>
+                        <viewControllerLayoutGuide type="bottom" id="i5w-mg-14U"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MdR-lk-m0A">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bird_icon.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="xB3-qF-dOl">
+                                <rect key="frame" x="16" y="50" width="280" height="468"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="xXi-ew-hb3"/>
+                                    <constraint firstAttribute="height" constant="468" id="xeR-jR-0Mm"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xB3-qF-dOl" firstAttribute="leading" secondItem="MdR-lk-m0A" secondAttribute="leadingMargin" id="4Fb-73-fU8"/>
+                            <constraint firstItem="xB3-qF-dOl" firstAttribute="centerY" secondItem="MdR-lk-m0A" secondAttribute="centerY" id="5ag-tm-yTi"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kMt-YK-bp3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1033" y="359"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="nFt-I1-EsL">
+            <objects>
+                <viewController storyboardIdentifier="D" id="Pq4-a0-Mgm" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OVC-vq-Ste"/>
+                        <viewControllerLayoutGuide type="bottom" id="afU-E9-bgN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eNn-nw-GYR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="butterfly1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="uvE-vx-qwl">
+                                <rect key="frame" x="16" y="50" width="280" height="468"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="1mZ-Vg-tIk"/>
+                                    <constraint firstAttribute="height" constant="468" id="e7p-CU-M1g"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="uvE-vx-qwl" firstAttribute="leading" secondItem="eNn-nw-GYR" secondAttribute="leadingMargin" id="3fI-Cx-dzk"/>
+                            <constraint firstItem="uvE-vx-qwl" firstAttribute="centerY" secondItem="eNn-nw-GYR" secondAttribute="centerY" id="eRa-2C-raG"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="00d-Ha-uKf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-679" y="359"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="UfE-sK-tk7">
+            <objects>
+                <viewController storyboardIdentifier="E" id="Qaj-bN-q6e" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LgB-4G-KUB"/>
+                        <viewControllerLayoutGuide type="bottom" id="5hJ-7u-zuT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nl9-iL-Uzv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="horse1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="j19-lV-cnD">
+                                <rect key="frame" x="16" y="50" width="280" height="468"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="468" id="BZC-5r-Lso"/>
+                                    <constraint firstAttribute="width" constant="280" id="Oxu-FN-BwE"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="j19-lV-cnD" firstAttribute="leading" secondItem="nl9-iL-Uzv" secondAttribute="leadingMargin" id="9Aa-Z3-hAc"/>
+                            <constraint firstItem="j19-lV-cnD" firstAttribute="centerY" secondItem="nl9-iL-Uzv" secondAttribute="centerY" id="x96-FA-egW"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k87-pG-Owb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-337" y="359"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="6C4-e2-YUV">
+            <objects>
+                <viewController storyboardIdentifier="F" id="EBu-oC-cRo" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GiY-PP-ECH"/>
+                        <viewControllerLayoutGuide type="bottom" id="5KI-Cl-bQ6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FR4-ZM-iz6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="duck1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="FLg-Vh-KQQ">
+                                <rect key="frame" x="16" y="160" width="280" height="249"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="70D-t2-a2E"/>
+                                    <constraint firstAttribute="height" constant="249" id="KS3-7i-rdn"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FLg-Vh-KQQ" firstAttribute="centerY" secondItem="FR4-ZM-iz6" secondAttribute="centerY" id="khS-cU-54c"/>
+                            <constraint firstItem="FLg-Vh-KQQ" firstAttribute="leading" secondItem="FR4-ZM-iz6" secondAttribute="leadingMargin" id="xeI-Ma-a5H"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d5z-4C-r2a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8" y="359"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Hsl-HZ-Raj">
+            <objects>
+                <viewController storyboardIdentifier="H" id="QnH-3f-YDT" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ku2-QT-pb2"/>
+                        <viewControllerLayoutGuide type="bottom" id="GyF-F9-TVm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wx5-lk-xGs">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tiger1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="VyR-cG-Tse">
+                                <rect key="frame" x="16" y="160" width="281" height="248"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="281" id="TCH-bS-91K"/>
+                                    <constraint firstAttribute="height" constant="248" id="YgQ-S3-MeT"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VyR-cG-Tse" firstAttribute="centerY" secondItem="wx5-lk-xGs" secondAttribute="centerY" id="3JO-I9-LJu"/>
+                            <constraint firstItem="VyR-cG-Tse" firstAttribute="leading" secondItem="wx5-lk-xGs" secondAttribute="leadingMargin" id="dgd-8K-tFb"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZUG-dx-GOj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="357" y="354"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="a2c-wu-udc">
+            <objects>
+                <viewController storyboardIdentifier="B" id="fn1-kY-cMx" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PGe-Mh-2im"/>
+                        <viewControllerLayoutGuide type="bottom" id="6pT-OB-a20"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="g1K-wI-bt2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="cat_icon.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="wTK-sX-X9i">
+                                <rect key="frame" x="20" y="50" width="280" height="468"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="468" id="Fc0-GJ-ule"/>
+                                    <constraint firstAttribute="width" constant="280" id="HMq-70-HUd"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wTK-sX-X9i" firstAttribute="centerY" secondItem="g1K-wI-bt2" secondAttribute="centerY" id="jmW-JA-NTx"/>
+                            <constraint firstItem="wTK-sX-X9i" firstAttribute="leading" secondItem="g1K-wI-bt2" secondAttribute="leadingMargin" id="mF0-M0-Evu"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2K5-vi-kWB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1393" y="359"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bird_icon.jpg" width="650" height="433"/>
+        <image name="butterfly1.jpg" width="2200" height="3074"/>
+        <image name="cat_icon.jpg" width="632" height="475"/>
+        <image name="dog1.jpg" width="1000" height="1416"/>
+        <image name="duck1.jpg" width="4234" height="2614"/>
+        <image name="horse1.jpg" width="1000" height="1500"/>
+        <image name="icon.jpg" width="164" height="164"/>
+        <image name="tiger1.jpg" width="1000" height="563"/>
+    </resources>
 </document>
