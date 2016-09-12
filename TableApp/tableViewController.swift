@@ -2,9 +2,11 @@
 //  tableViewController.swift
 //  TableApp
 //
-//  Created by Franklin on 2016-09-07.
-//  Copyright © 2016 Franklin. All rights reserved.
+
+//  Created by Kim Nguyen on 2016-09-07.
+//  Copyright © 2016 Kim Nguyen. All rights reserved.
 //
+
 
 import Foundation
 import UIKit
